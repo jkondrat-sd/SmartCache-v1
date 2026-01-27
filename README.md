@@ -1,12 +1,13 @@
 # SmartCache: AI-Powered Dynamic TTL Caching System
 
-![System Architecture](<img width="2014" height="692" alt="image" src="https://github.com/user-attachments/assets/adea67ac-d9e3-4e92-8221-4fd6ee0ad185" />)
+<img width="2014" height="692" alt="image" src="https://github.com/user-attachments/assets/2dea0e9c-3dec-4aa3-ba99-8fdb3bc5dc03" />
+
 
 **SmartCache** is an AI-powered caching system that optimizes resource caching by using dynamic Time-To-Live (TTL) values.
 
 Unlike traditional caching systems that rely on static TTLs, SmartCache utilizes **LSTM-based prediction models** and time-series data to predict the optimal lifetime for each cache entry.
 
-## 🚀 Key Features
+##  Key Features
 
 * **Dynamic TTL Assignment:** Automatically assigns per-resource TTL based on AI predictions rather than static configuration.
 * **Predictive Caching:** Leverages historical access patterns to forecast resource popularity and adjust cache duration accordingly.
@@ -16,7 +17,7 @@ Unlike traditional caching systems that rely on static TTLs, SmartCache utilizes
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 The system is organized into three distinct layers:
 
@@ -40,7 +41,7 @@ The system is organized into three distinct layers:
 
 ---
 
-## 🛠️ Installation & Deployment
+## Installation & Deployment
 
 SmartCache is designed as a set of Dockerized microservices.
 
@@ -65,7 +66,7 @@ docker-compose up -d
 
 ---
 
-## 💻 SDK Usage
+## SDK Usage
 
 Integrating SmartCache into your Python application is straightforward.
 
@@ -91,7 +92,7 @@ value = cache.get("video:123")
 
 ---
 
-## 🔄 How It Works
+## How It Works
 
 1. **Initial Set:** The user calls `cache.set()`. An initial short TTL is set, and an access log is sent to Kafka.
 
@@ -105,7 +106,7 @@ value = cache.get("video:123")
 
 ---
 
-## 📊 Use Cases
+## Use Cases
 
 * **API Response Caching:** optimizing storage for varying endpoint popularity.
 * **CDN Content:** Managing static and dynamic assets.
